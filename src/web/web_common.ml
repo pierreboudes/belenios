@@ -294,7 +294,7 @@ let sendmail ?return_path message =
 let send_email recipient subject body =
   let contents =
     Netsendmail.compose
-      ~from_addr:("Belenios public server", !Web_config.server_mail)
+      ~from_addr:("Belenios UP13", !Web_config.server_mail)
       ~to_addrs:[recipient, recipient]
       ~in_charset:`Enc_utf8 ~out_charset:`Enc_utf8
       ~subject body
@@ -315,11 +315,11 @@ let split_identity x =
   | Some i -> String.sub x 0 i, String.sub x (i+1) (n-i-1)
   | None -> x, x
 
-let available_languages = ["en"; "fr"; "de"; "ro"; "it"]
+let available_languages = ["fr"; "en"; "de"; "ro"; "it"]
 
 let get_languages xs =
   match xs with
-  | None -> ["en"]
+  | None -> ["fr"]
   | Some xs -> xs
 
 let string_of_languages xs =

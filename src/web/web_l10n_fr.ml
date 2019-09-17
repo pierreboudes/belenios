@@ -195,7 +195,7 @@ Vous pouvez vérifier sa présence dans l'urne, accessible au
 Les résultats seront publiés sur la page de l'élection
   %s%s
 
--- \nBelenios"
+-- \nBelenios université Paris 13"
 
 let this_vote_replaces = "\n\nCe vote remplace le vote précédent."
 let please_contact = "Pour obtenir plus d'informations, veuillez contacter :"
